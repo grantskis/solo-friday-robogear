@@ -98,7 +98,7 @@ numberArray.forEach(function(input) {
   } else if (/1/.test(input) === true) {
     mixedArray.push("Contains 1");
   } else {
-    mixedArray.push("input");
+    mixedArray.push(input);
   };
 });
 console.log(mixedArray)
