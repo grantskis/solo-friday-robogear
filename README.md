@@ -1,5 +1,3 @@
-_This project is not currently in presentation format. Please come back later._  
-
 ## _"Mister Robogear's Neighborhood"_  
 
 ### _An HTML website using jQuery, bootstrap, and custom JavaScript and CSS, October 30th, 2020_  
@@ -7,6 +5,8 @@ _This project is not currently in presentation format. Please come back later._
 #### Description  
 
 This project should produce webpage able to allow the user to submit one number and be returned a range of numbers from zero to their selection. Additionally, numbers containing certain integers will be completely replaced with a set of phrases.  
+
+User-input number can be anywhere from -100 to +100; all numbers outside of this range should spit back an error, to hopefully prevent infinite computations for distressingly large numbers. Any non-integer input should also spit back an error for the user. Fractions are disregarded in both input and output. 
 
 #### Project Criteria:  
 
@@ -22,8 +22,9 @@ As abbreviated from [Epicodus](https://epicodus.com) program's cirriculum:
 > 
 >  Example: If a user inputs a `5`, the program should display a list of values: `"0", "Beep!", "Boop", "Won't you be my neighbor?", 4, 5`  
 
+-------------------------------
+
 #### Project Specs:  
-- _This project is not currently in presentation format. Please come back later._
 
 Describe: inputGood()
 Test: "Verify that the user has submitted a number for the range calcultion."
@@ -35,11 +36,12 @@ Test: "Check if a given number contains the specified integer."
 Code: `{ if (/3/.test(input) === true) {return true} else {return false}; }`
 Expect(13).toEqual(true) and Expect(20).toEqual(false) for containsThree()
 Expect(13).toEqual(false) and Expect(20).toEqual(true) for containsTwo() 
+    In final product, these are refactored into one `if..else` function with the `inputGood()` function. They have also gone through some name changes.
 
-Describe: createRange();
-Test: "Create an array with each element a number, starting at zero and ending at the user's input"
+Describe: positiveRange();
+Test: "Create an array with each element a number, starting at zero and ending at the user's input, when the user's input is positive."
 Code: `{ while (input > array.length - 1) {array.push(array.length); }`
-Expect:createRange(7).toEqual[0, 1, 2, 3, 4, 5, 6, 7]
+Expect:positiveRange(7).toEqual[0, 1, 2, 3, 4, 5, 6, 7]
 
 Describe: negativeRange();
 Test: "Create an array with each element a number, starting at zero and ending at the user's input, when the user's input is negative."
@@ -54,58 +56,42 @@ Expect(4).toEqual(positive); Expect(-4).toEqual(negative);
 Describe: cloneAndTransform();
 Test: "Create a new array with the values of the user's range, but replacing values that contain specified integers."
 Code: `{ if (/3/.test(input) === true) {newArray.push("new value")} else {newArray.push(input)}; }`
-<!-->
+    In the current product, this behavior is nested in the `numberArray.forEach()` function, under the director function `chainTheseFunctions()`
 
+-------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</--> 
 #### Known Issues / Bugs:    
-- _This project is not currently in presentation format. Please come back later._
+- Main index.html is not currently styled, and looks very ugly.
+
+-------------------------------
 
 #### Setup:  
 ###### To view live on the web:  
-please wait for futher updates.  
-<!-- To view live on the web, please visit [this GitHub.io page](https://grantskis.github.io/) -->
+To view live on the web, please visit [this GitHub.io page](https://grantskis.github.io/solo-friday-robogear/).
 
 ###### To view locally on your machine:  
-please wait for further updates.  
-<!-- To view locally on your machine, please:
-1. Find the green **Code** button above the file list on this project's [main GitHub repository page](https://grantskis.github.io/ [CHANGE THIS LINK] ).
+To view locally on your machine, please:
+1. Find the green **Code** button above the file list on this project's [main GitHub repository page](https://grantskis.github.io/solo-friday-robogear).
 2. Select the button to open a drop-down menu. Select "Open with GitHub Desktop" or, if you do not have this program installed, download the compressed .zip file.
 3. Extract the .zip file to your local machine.
 4. Use your browser of choice to launch _index.html_.
-5. Directions were accurate as of Oct. 30, 2020. If GitHub has since changed their web UI, please see [the GitHub help docs](https://docs.github.com/en) for up-to-date information. -->
+5. Directions were accurate as of Oct. 30, 2020. If GitHub has since changed their protocol, please see [the GitHub help docs](https://docs.github.com/en) for up-to-date information.
 
 ###### To clone this project to your machine:  
-please wait for further updates.  
-
-<!-- To clone this project to your machine, please:  
+To clone this project to your machine, please:  
 1. Launch your terminal of choice. 
 
 > The following directions are based on Git Bash for a Windows machine; you may have to adjust terminology based on your local specs.
 
 2. Navigate to the containing directory you would like to clone this project.
 3. Input:
-`$ git clone https://github.com/grantskis/[ CHANGE THIS PART ]`
-4. This will clone the project to a folder called "roman-numerals." If you wish to clone it into a directory of a different name, append the new folder name to the end of the string, like so:
-`$ git clone https://github.com/grantskis/[ CHANGE THIS PART ] NEW-FOLDER` -->
+`$ git clone https://github.com/grantskis/solo-friday-robogear`
+4. This will clone the project to a folder called "solo-friday-robogear." If you wish to clone it into a directory of a different name, append the new folder name to the end of the string, like so:  
+`$ git clone https://github.com/grantskis/solo-friday-robogear NEW-FOLDER`  
+where `NEW-FOLDER` is where you would type the name of the folder you would like to use.  
+5. Directions were accurate as of Oct. 30, 2020. If GitHub has since changed their protocol, please see [the GitHub help docs](https://docs.github.com/en) for up-to-date information.
+
+-------------------------------
 
 #### Technologies Used:  
 - Website, CSS, and JavaScript coded in Visual Studio Code.  
