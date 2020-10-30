@@ -1,4 +1,4 @@
-.line, #NaN, #output, #robo4, #robo3, #robo2, #robo1 {
+.line, #NaN, #tooBig, #tooSmall, #output, #robo4, #robo3, #robo2, #robo1 {
   display: none;
 };
 
