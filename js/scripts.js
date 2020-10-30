@@ -20,7 +20,11 @@ function buildABear(input) {
   }
   else { 
     numberArray = [0]
-    if (input > 0) {
+    if (input > 100) {
+      finalChain.push($("#tooBig").text());
+    } else if (input < -100) {
+      finalChain.push($("#tooSmall").text());
+    } else if (input > 0) {
       positiveRange(input);
     } else if (input < 0) {
       negativeRange(input);
@@ -31,7 +35,6 @@ function buildABear(input) {
     }
   }
 };
-
 
 function chainTheseFunctions(input) {
   numberArray = [];
