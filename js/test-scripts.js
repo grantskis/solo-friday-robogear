@@ -24,19 +24,70 @@ let banana = "7";
 let testerBanana = parseInt(banana);
 containsThree(testerBanana);
 
-let chainArray = [0]
 function createRange(input) {
-  while (input > chainArray.length - 1) {
-    chainArray.push(chainArray.length);
-    console.log(chainArray);
+  while (input > cantalope.length - 1) {
+    cantalope.push(cantalope.length);
   };
 };
+let cantalope = [0]
 createRange()
 
-let chainArray = [0]
 function negativeRange(input) {
-  while ((input * -1) > (chainArray.length - 1)) {chainArray.push(chainArray.length * -1)
+  while ((input * -1) > (dragonfruit.length - 1)) {
+    dragonfruit.push(dragonfruit.length * -1)
   };
 };
-  console.log(chainArray);
-  negativeRange()
+let dragonfruit = [0]
+negativeRange()
+
+function positiveOrNot(input) {
+  if (input > 0) {
+    return "positive number"
+  } else if (input < 0) {
+    return "negative number"
+  } else {
+    return "is zero"
+  };
+};
+let eggplant = ""
+positiveOrNot(eggplant)
+
+
+
+
+
+
+
+// nesting functions to get NaN, Positive, Negative ranges.
+function positiveRange(rangeInput) {
+  while (rangeInput > numberArray.length - 1) {
+    numberArray.push(numberArray.length);
+  };
+};
+function negativeRange(rangeInput) {
+  while ((rangeInput * -1) > (numberArray.length - 1)) {
+    numberArray.push(numberArray.length * -1);
+  };
+};
+let numberArray = [0]
+function buildABear(input) {
+  let inputAsNumber = parseInt(input);
+  // NaN: Y/N section
+  if 
+    (isNaN(inputAsNumber)) {
+    return "is not a number"
+  }
+  else { 
+    // IS A NUMBER:
+    if (inputAsNumber > 0) {
+      positiveRange(inputAsNumber);
+    } else if (inputAsNumber < 0) {
+      negativeRange(inputAsNumber);
+    } else if (inputAsNumber === 0) {
+      return numberArray
+    } else {
+      return "is otherwise broken"
+    }
+  }
+};
+buildABear();
