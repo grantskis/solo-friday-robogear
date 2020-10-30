@@ -29,4 +29,16 @@ function buildABear(input) {
   }
 };
 buildABear();
-console.log(numberArray);
+
+let mixedArray = [];
+numberArray.forEach(function(input) {
+  if (/3/.test(input) === true) {
+    mixedArray.push("Contains 3");
+  } else if (/2/.test(input) === true) {
+    mixedArray.push("Contains 2");
+  } else if (/1/.test(input) === true) {
+    mixedArray.push("Contains 1");
+  } else {
+    mixedArray.push(input);
+  };
+});

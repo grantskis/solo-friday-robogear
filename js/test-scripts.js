@@ -1,15 +1,44 @@
-function inputGood(input) {
-  if (isNaN(input)) {
-    return "is not a number" 
-  } else {
-    return "is a number"
-  };
+function redeactedCode() {
+// function inputGood(input) {
+//   if (isNaN(input)) {
+//     return "is not a number" 
+//   } else {
+//     return "is a number"
+//   };
+// };
+// let apple = "7";
+// let testerApple = parseInt(apple);
+// inputGood(testerApple);
+// function createRange(input) {
+//   while (input > cantalope.length - 1) {
+//     cantalope.push(cantalope.length);
+//   };
+// };
+// let cantalope = [0]
+// createRange()
+// function negativeRange(input) {
+//   while ((input * -1) > (dragonfruit.length - 1)) {
+//     dragonfruit.push(dragonfruit.length * -1)
+//   };
+// };
+// let dragonfruit = [0]
+// negativeRange()
+// 
+// function positiveOrNot(input) {
+//   if (input > 0) {
+//     return "positive number"
+//   } else if (input < 0) {
+//     return "negative number"
+//   } else {
+//     return "is zero"
+//   };
+// };
+// let eggplant = ""
+// positiveOrNot(eggplant)
 };
-let apple = "7";
-let testerApple = parseInt(apple);
-inputGood(testerApple);
 
-function containsThree(input) {
+
+numberArray.forEach(function(input) {
   if (/3/.test(input) === true) {
     return "contains 3" 
   } else if (/2/.test(input) === true) {
@@ -19,46 +48,17 @@ function containsThree(input) {
   } else {
     return "does not contain any of these"
   };
-};
-let banana = "7";
-let testerBanana = parseInt(banana);
-containsThree(testerBanana);
-
-function createRange(input) {
-  while (input > cantalope.length - 1) {
-    cantalope.push(cantalope.length);
-  };
-};
-let cantalope = [0]
-createRange()
-
-function negativeRange(input) {
-  while ((input * -1) > (dragonfruit.length - 1)) {
-    dragonfruit.push(dragonfruit.length * -1)
-  };
-};
-let dragonfruit = [0]
-negativeRange()
-
-function positiveOrNot(input) {
-  if (input > 0) {
-    return "positive number"
-  } else if (input < 0) {
-    return "negative number"
-  } else {
-    return "is zero"
-  };
-};
-let eggplant = ""
-positiveOrNot(eggplant)
+});
+let banana = numberArray
+containsThree(banana);
 
 
 
 
 
+//////////////////////////////////////////////
 
-
-// nesting functions to get NaN, Positive, Negative ranges.
+let numberArray = [];
 function positiveRange(rangeInput) {
   while (rangeInput > numberArray.length - 1) {
     numberArray.push(numberArray.length);
@@ -69,16 +69,14 @@ function negativeRange(rangeInput) {
     numberArray.push(numberArray.length * -1);
   };
 };
-let numberArray = [0]
+
 function buildABear(input) {
-  let inputAsNumber = parseInt(input);
-  // NaN: Y/N section
-  if 
-    (isNaN(inputAsNumber)) {
-    return "is not a number"
+  const inputAsNumber = parseInt(input);
+  if (isNaN(inputAsNumber)) {
+    numberArray = ["is not a number"];
   }
   else { 
-    // IS A NUMBER:
+    numberArray = [0]
     if (inputAsNumber > 0) {
       positiveRange(inputAsNumber);
     } else if (inputAsNumber < 0) {
@@ -91,3 +89,17 @@ function buildABear(input) {
   }
 };
 buildABear();
+let mixedArray = [];
+numberArray.forEach(function(input) {
+  if (/3/.test(input) === true) {
+    mixedArray.push("Contains 3");
+  } else if (/2/.test(input) === true) {
+    mixedArray.push("Contains 2");
+  } else if (/1/.test(input) === true) {
+    mixedArray.push("Contains 1");
+  } else {
+    mixedArray.push("input");
+  };
+});
+console.log(mixedArray)
+
