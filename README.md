@@ -25,7 +25,53 @@ As abbreviated from [Epicodus](https://epicodus.com) program's cirriculum:
 #### Project Specs:  
 - _This project is not currently in presentation format. Please come back later._
 
+Describe: inputGood()
+Test: "Verify that the user has submitted a number for the range calcultion."
+Code: `{ if (isNaN(input)) {return false} else {return true} }`
+Expect(7).toEqual(true); Expect("turkey").toEqual(false).
 
+Describe: containsThree(), containsTwo(), containsOne
+Test: "Check if a given number contains the specified integer."
+Code: `{ if (/3/.test(input) === true) {return true} else {return false}; }`
+Expect(13).toEqual(true) and Expect(20).toEqual(false) for containsThree()
+Expect(13).toEqual(false) and Expect(20).toEqual(true) for containsTwo() 
+
+Describe: createRange();
+Test: "Create an array with each element a number, starting at zero and ending at the user's input"
+Code: `{ while (input > array.length - 1) {array.push(array.length); }`
+Expect:createRange(7).toEqual[0, 1, 2, 3, 4, 5, 6, 7]
+
+Describe: negativeRange();
+Test: "Create an array with each element a number, starting at zero and ending at the user's input, when the user's input is negative."
+Code: `{ while ((input * -1) > (array.length - 1)) {array.push(array.length * -1)} `
+Expect(-4).toEqual[0, -1, -2, -3, -4]
+
+Describe: positiveOrNot();
+Test: "Determine whether a user-input number is positive or negative."
+Code:
+Expect(4).toEqual(positive); Expect(-4).toEqual(negative);
+<!-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</--> 
 #### Known Issues / Bugs:    
 - _This project is not currently in presentation format. Please come back later._
 
