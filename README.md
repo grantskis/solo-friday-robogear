@@ -48,8 +48,12 @@ Expect(-4).toEqual[0, -1, -2, -3, -4]
 
 Describe: positiveOrNot();
 Test: "Determine whether a user-input number is positive or negative."
-Code:
+Code: `{ if (input >= 0) {return positive} else {return negative} }`
 Expect(4).toEqual(positive); Expect(-4).toEqual(negative);
+
+Describe: cloneAndTransform();
+Test: "Create a new array with the values of the user's range, but replacing values that contain specified integers."
+Code: `{ if (/3/.test(input) === true) {newArray.push("new value")} else {newArray.push(input)}; }`
 <!-->
 
 
