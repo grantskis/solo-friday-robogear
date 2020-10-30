@@ -16,7 +16,7 @@ function negativeRange(rangeInput) {
 
 function buildABear(input) {
   if (isNaN(input)) {
-    finalChain = ["is not a number"];
+    finalChain.push($("#NaN").text());
   }
   else { 
     numberArray = [0]
@@ -37,19 +37,19 @@ function chainTheseFunctions(input) {
   numberArray = [];
   finalChain = [];
   buildABear(input);
-    numberArray.forEach(function(input) {
+  numberArray.forEach(function(input) {
     if (/3/.test(input) === true) {
-      finalChain.push("Contains 3");
+      finalChain.push($("#robo3").text());
     } else if (/2/.test(input) === true) {
-      finalChain.push("Contains 2");
+      finalChain.push($("#robo2").text());
     } else if (/1/.test(input) === true) {
-      finalChain.push("Contains 1");
+      finalChain.push($("#robo1").text());
     } else if (input !== 0) {
       finalChain.push(input);
     } else {
       return "error"
     };
-  });
+  });  
 };
 
 
@@ -57,11 +57,12 @@ function chainTheseFunctions(input) {
 $(document).ready(function() {
   $("#box").submit(function(event) {
     event.preventDefault();
+    $("#neighbor").text("");
     const userNumber = parseInt($("input#number").val());
-    chainTheseFunctions(userNumber);    
-    console.log(numberArray);
-    console.log(finalChain);
-    $("#neighbor").text(finalChain);
+    chainTheseFunctions(userNumber);
+    finalChain.forEach(function(link) {
+      $("#neighbor").append("<li>" + link + "</li>");
+    });
     $("#output").show();
   });
 });
