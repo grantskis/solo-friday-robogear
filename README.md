@@ -26,51 +26,52 @@ As abbreviated from [Epicodus](https://epicodus.com) program's cirriculum:
 
 #### Project Specs:  
 
-Describe: inputGood()\
+Describe: inputGood();\
 Test: "Verify that the user has submitted a number for the range calcultion."\
 Code: `{ if (isNaN(input)) {return false} else {return true} }`\
-Expect(7).toEqual(true); Expect("turkey").toEqual(false).\
+`Expect(7).toEqual(true)`; `Expect("turkey").toEqual(false)`.
 
-Describe: containsThree(), containsTwo(), containsOne
-Test: "Check if a given number contains the specified integer."
-Code: `{ if (/3/.test(input) === true) {return true} else {return false}; }`
-Expect(13).toEqual(true) and Expect(20).toEqual(false) for containsThree()
-Expect(13).toEqual(false) and Expect(20).toEqual(true) for containsTwo() 
-    In final product, these are refactored into one `if..else` function with the `inputGood()` function. They have also gone through some name changes.
+Describe: containsThree(), containsTwo(), containsOne();\
+Test: "Check if a given number contains the specified integer."\
+Code: `{ if (/3/.test(input) === true) {return true} else {return false}; }`\
+`Expect(13).toEqual(true)` and `Expect(20).toEqual(false)` for containsThree()\
+`Expect(13).toEqual(false)` and `Expect(20).toEqual(true)` for containsTwo()\
+    > In final product, these are refactored into one `if..else` function with the `inputGood()` function. They have also gone through some name changes.
 
-Describe: positiveRange();
-Test: "Create an array with each element a number, starting at zero and ending at the user's input, when the user's input is positive."
-Code: `{ while (input > array.length - 1) {array.push(array.length); }`
-Expect:positiveRange(7).toEqual[0, 1, 2, 3, 4, 5, 6, 7]
+Describe: positiveRange();\
+Test: "Create an array with each element a number, starting at zero and ending at the user's input, when the user's input is positive."\
+Code: `{ while (input > array.length - 1) {array.push(array.length); }`\
+`Expect(7).toEqual[0, 1, 2, 3, 4, 5, 6, 7]`
 
-Describe: negativeRange();
-Test: "Create an array with each element a number, starting at zero and ending at the user's input, when the user's input is negative."
-Code: `{ while ((input * -1) > (array.length - 1)) {array.push(array.length * -1)} `
-Expect(-4).toEqual[0, -1, -2, -3, -4]
+Describe: negativeRange();\
+Test: "Create an array with each element a number, starting at zero and ending at the user's input, when the user's input is negative."\
+Code: `{ while ((input * -1) > (array.length - 1)) {array.push(array.length * -1)} `\
+`Expect(-4).toEqual[0, -1, -2, -3, -4]`
 
-Describe: positiveOrNot();
-Test: "Determine whether a user-input number is positive or negative."
-Code: `{ if (input >= 0) {return positive} else {return negative} }`
-Expect(4).toEqual(positive); Expect(-4).toEqual(negative);
+Describe: positiveOrNot();\
+Test: "Determine whether a user-input number is positive or negative."\
+Code: `{ if (input >= 0) {return positive} else {return negative} }`\
+`Expect(4).toEqual(positive)`; `Expect(-4).toEqual(negative);`
 
-Describe: cloneAndTransform();
-Test: "Create a new array with the values of the user's range, but replacing values that contain specified integers."
-Code: `{ if (/3/.test(input) === true) {newArray.push("new value")} else {newArray.push(input)}; }`
-    In the current product, this behavior is nested in the `numberArray.forEach()` function, under the director function `chainTheseFunctions()`
+Describe: cloneAndTransform();\
+Test: "Create a new array with the values of the user's range, but replacing values that contain specified integers."\
+Code: `{ if (/3/.test(input) === true) {newArray.push("new value")} else {newArray.push(input)}; }`\
+`Expect(23).toEqual(true)`, resulting in `newArray.push(""Won't you be my neighbor?"")`
+>    In the current product, this behavior is nested in the `numberArray.forEach()` function, under the director function `chainTheseFunctions()`\
 
 -------------------------------
 
 #### Known Issues / Bugs:    
 - Main index.html is not currently styled, and looks very ugly.
+- Line breaks in README.md not rendered correctly.
 
 -------------------------------
 
 #### Setup:  
 ###### To view live on the web:  
-To view live on the web, please visit [this GitHub.io page](https://grantskis.github.io/solo-friday-robogear/).
+Please visit [this GitHub.io page](https://grantskis.github.io/solo-friday-robogear/).
 
 ###### To view locally on your machine:  
-To view locally on your machine, please:
 1. Find the green **Code** button above the file list on this project's [main GitHub repository page](https://grantskis.github.io/solo-friday-robogear).
 2. Select the button to open a drop-down menu. Select "Open with GitHub Desktop" or, if you do not have this program installed, download the compressed .zip file.
 3. Extract the .zip file to your local machine.
@@ -78,16 +79,15 @@ To view locally on your machine, please:
 5. Directions were accurate as of Oct. 30, 2020. If GitHub has since changed their protocol, please see [the GitHub help docs](https://docs.github.com/en) for up-to-date information.
 
 ###### To clone this project to your machine:  
-To clone this project to your machine, please:  
 1. Launch your terminal of choice. 
 
 > The following directions are based on Git Bash for a Windows machine; you may have to adjust terminology based on your local specs.
 
 2. Navigate to the containing directory you would like to clone this project.
-3. Input:
+3. Input:\
 `$ git clone https://github.com/grantskis/solo-friday-robogear`
-4. This will clone the project to a folder called "solo-friday-robogear." If you wish to clone it into a directory of a different name, append the new folder name to the end of the string, like so:  
-`$ git clone https://github.com/grantskis/solo-friday-robogear NEW-FOLDER`  
+4. This will clone the project to a folder called "solo-friday-robogear." If you wish to clone it into a directory of a different name, append the new folder name to the end of the string, like so:\
+`$ git clone https://github.com/grantskis/solo-friday-robogear NEW-FOLDER`\
 where `NEW-FOLDER` is where you would type the name of the folder you would like to use.  
 5. Directions were accurate as of Oct. 30, 2020. If GitHub has since changed their protocol, please see [the GitHub help docs](https://docs.github.com/en) for up-to-date information.
 
