@@ -14,7 +14,7 @@ function negativeRange(rangeInput) {
   };
 };
 
-function buildABear(input) {
+function buildABot(input) {
   if (isNaN(input)) {
     finalChain.push($("#NaN").text());
   }
@@ -39,7 +39,7 @@ function buildABear(input) {
 function chainTheseFunctions(input) {
   numberArray = [];
   finalChain = [];
-  buildABear(input);
+  buildABot(input);
   numberArray.forEach(function(input) {
     if (/3/.test(input) === true) {
       finalChain.push($("#robo3").text());
@@ -48,7 +48,7 @@ function chainTheseFunctions(input) {
     } else if (/1/.test(input) === true) {
       finalChain.push($("#robo1").text());
     } else if (input !== 0) {
-      finalChain.push(input);
+      finalChain.push($("#numberItem").text() + input);
     } else {
       return "error"
     };
