@@ -1,25 +1,48 @@
+body {
+  overflow-y:scroll;
+  background: #E3E3F2;
+  font-family: 'Terminal', 'Courier New', Courier, monospace;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  text-align: left;
+}
+
+h1 {
+  color: #696A9E;
+  margin: auto;
+  text-align: center;
+  font-size:7rem;
+}
+
 .form-group {
   margin: auto;
   text-align: center;
 }
 
 .round-it {
+  margin: 0.5rem auto;
   border-radius: 1.5rem;
   text-align: center;
+  width: 10rem;
+  padding: 0.25rem 0.5rem;
 }
 
-button {
-  margin-top: 1em;
-  margin-bottom: 1em;
+#outputContainer, #inputContainer {
+  margin: 0.5rem auto;
+  text-align: left;
+  max-width: 50rem;
 }
 
 ul {
+  background: #B6B6CD;
+  margin: auto;
+  border-radius: 1.5rem;
+  padding: 1.5rem 1.25rem 1rem 2.5rem;
   list-style-type: none;
-  background: yellow;
 }
 
-
-
-.line, #NaN, #tooBig, #tooSmall, #output, #robo3, #robo2, #robo1, #numberItem {
+#NaN, #tooBig, #tooSmall, #robo3, #robo2, #robo1, #numberItem, #output {
   display: none;
 };
