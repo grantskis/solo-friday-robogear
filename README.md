@@ -26,10 +26,10 @@ As abbreviated from [Epicodus](https://epicodus.com) program's cirriculum:
 
 #### Project Specs:  
 
-Describe: inputGood()
-Test: "Verify that the user has submitted a number for the range calcultion."
-Code: `{ if (isNaN(input)) {return false} else {return true} }`
-Expect(7).toEqual(true); Expect("turkey").toEqual(false).
+Describe: inputGood()\
+Test: "Verify that the user has submitted a number for the range calcultion."\
+Code: `{ if (isNaN(input)) {return false} else {return true} }`\
+Expect(7).toEqual(true); Expect("turkey").toEqual(false).\
 
 Describe: containsThree(), containsTwo(), containsOne
 Test: "Check if a given number contains the specified integer."
