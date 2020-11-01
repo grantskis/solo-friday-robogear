@@ -1,4 +1,25 @@
-.line, #NaN, #tooBig, #tooSmall, #output, #robo4, #robo3, #robo2, #robo1 {
+.form-group {
+  margin: auto;
+  text-align: center;
+}
+
+.round-it {
+  border-radius: 1.5rem;
+  text-align: center;
+}
+
+button {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style-type: none;
+  background: yellow;
+}
+
+
+
+.line, #NaN, #tooBig, #tooSmall, #output, #robo3, #robo2, #robo1, #numberItem {
   display: none;
 };
-
