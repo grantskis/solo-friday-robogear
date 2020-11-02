@@ -62,8 +62,7 @@ Code: `{ if (/3/.test(input) === true) {newArray.push("new value")} else {newArr
 -------------------------------
 
 #### Known Issues / Bugs:    
-- Main index.html is not currently styled, and looks very ugly.
-- Line breaks in README.md not rendered correctly.
+None currently known.
 
 -------------------------------
 
@@ -96,6 +95,8 @@ where `NEW-FOLDER` is where you would type the name of the folder you would like
 #### Technologies Used:  
 - Website, CSS, and JavaScript coded in Visual Studio Code.  
 - JavaScript testing, breaking, and retesting conducted in [jsconsole](https://jsconsole.com/).  
+- Icons used are open source and are provided by [Boxicons](https://boxicons.com/).
+- Color scheme generated with the help of [Coolors](https://coolors.co/).
 
 ##### License
 - _GNU AGPLv3_  
