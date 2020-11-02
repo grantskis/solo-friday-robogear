@@ -36,7 +36,7 @@ As abbreviated from [Epicodus](https://epicodus.com) program's cirriculum:
 **Code:** `{ if (/3/.test(input) === true) {return true} else {return false}; }`\
 `Expect(13).toEqual(true)` and `Expect(20).toEqual(false)` for containsThree()\
 `Expect(13).toEqual(false)` and `Expect(20).toEqual(true)` for containsTwo()
-    > In final product, these are refactored into one `if..else` function with the `inputGood()` function. They have also gone through some name changes.
+>    In final product, these are refactored into one `if..else` function with the `inputGood()` function. They have also gone through some name changes.
 
 **Describe:** positiveRange();\
 **Test:** "Create an array with each element a number, starting at zero and ending at the user's input, when the user's input is positive."\
