@@ -6,12 +6,14 @@ function positiveRange(rangeInput) {
   while (rangeInput > numberArray.length - 1) {
     numberArray.push(numberArray.length);
   };
+  numberArray.unshift("0");
 };
 
 function negativeRange(rangeInput) {
   while ((rangeInput * -1) > (numberArray.length - 1)) {
     numberArray.push(numberArray.length * -1);
   };
+  numberArray.unshift("0");
 };
 
 function buildABot(input) {
