@@ -3,42 +3,59 @@
 <head>
   <meta charset="UTF-8"></meta>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
   <title>
-    [ Roboboboboo ]
+    [ greet your new neighbot ]
   </title>
 </head>
 <body>
   <div class="container">
     <h1>
-      [ title ]
+      <i class='bx bx-bot bx-tada-hover bx-lg' alt="A square icon of a robotic face."></i>
     </h1>
     <form id="box">
-      <div class="row">
+      <div class="row" id="inputContainer">
         <div class="form-group">
-          <label for="submit">
-            Enter your Number
-          </label>
+          <p>
+            "Welcome to the neighborhood, human!"
+          </p>
+          <p>
+            "You can call me Mister Robogear."
+          </p> 
+          <p>
+            "To call on my hospitality, reply with a number."
+          </p>
+          <p>
+            "Thank you."
+          </p>
+          <p>
+            &gt;            
+            <label for="submit">
+              (enter a number?)
+            </label>
+          </p>
           <input id="number" class="form-control round-it" type="text">
           <button type="submit" class="btn-dark round-it">
             Say hello
+            <i class='bx bx-bot bx-tada-hover bx-xs' alt="A square icon of a robotic face."></i>
           </button>
         </div>
       </div>
     </form>
-    <div id="output">
-      <ul>
+    <div id="outputContainer" class="form-group">
+      <ul id="output">
         <span id="neighbor"></span>
       </ul>
       <div id="NaN">"That isn't a number... that isn't very neighborly of you... bleep blorp."</div>
       <div id="tooBig">"That number is very large... that's too large for me... :( give me something smaller!"</div>
-      <div id="tooSmall">"That number is very very deep in the negatives... that's too far down for me... :( give me something less negative."</div>
-      <div id="robo3">Won't you be my neighbor?"</div>
-      <div id="robo2">"Boop!"</div>
-      <div id="robo1">"Beep!"</div>
-      <div id="numberItem">‣ </div>
+      <div id="tooSmall">"That number is very very negative... that's too far down for me... :( give me something less negative."</div>
+      <div id="robo3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "Won't you be my neighbor?"</div>
+      <div id="robo2">&nbsp; &nbsp; "Boop!"</div>
+      <div id="robo1">&nbsp; "Beep!"</div>
+      <div id="numberItem"></div>
     </div>
   </div>
 </body>
